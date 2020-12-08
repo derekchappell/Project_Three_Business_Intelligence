@@ -4,7 +4,7 @@
 
 ### Here is our basic Architecture ###
 
-[.](<a href="https://imgur.com/cdkegjn"><img src="https://i.imgur.com/cdkegjn.jpg" title="source: imgur.com" /></a>)
+[.](<a href="https://imgur.com/pVhZWpd"><img src="https://i.imgur.com/pVhZWpd.jpg" title="source: imgur.com" /></a>)
 
 ### So lets get our Data into the AWS ethosephere ###
 
