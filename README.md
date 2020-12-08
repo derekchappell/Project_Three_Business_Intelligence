@@ -4,7 +4,7 @@
 
 ### Here is our basic Architecture ###
 
-[.](https://github.com/derekchappell/Project_Three_Business_Intelligence/blob/main/Photos/Project_Three_BI_Flow.jpg)
+[.](<blockquote class="imgur-embed-pub" lang="en" data-id="pVhZWpd"><a href="https://imgur.com/pVhZWpd">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
 
 ### So lets get our Data into the AWS ethosephere ###
 
