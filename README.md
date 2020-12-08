@@ -2,7 +2,9 @@
 
 ## Can we create an entire data pipeline from Data procurement to Business Intelligence Tool use? And do it for free? ##
 
-### Here is our basic Architecture ###
+### Here is our basic Architecture: ###
+
+
 
 [.](<a href="https://imgur.com/pVhZWpd"><img src="https://i.imgur.com/pVhZWpd.jpg" title="source: imgur.com" /></a>)
 
