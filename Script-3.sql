@@ -35,7 +35,7 @@ ALTER TABLE mytable
 DROP COLUMN Technical_Details;
 
 copy mytable from 's3://project-three-business-intelligence/marketing_sample_for_amazon_data.csv'
-credentials 'aws_iam_role=arn:aws:iam::984719600581:role/REDSHIFTNEW'
+credentials 'aws_iam_role=arn:aws:iam::{endpoint}:role/REDSHIFTNEW'
 ignoreheader 1
 delimiter ',' region 'us-east-2'
 removequotes
