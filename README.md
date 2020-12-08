@@ -1,6 +1,17 @@
 # Project Three Business Intelligence #
 
+## Can we create an entire data pipeline from Data procurement to Business Intelligence Tool use? And do it for free? ##
 
+### Here is our basic Architecture ###
+
+[.](https://github.com/derekchappell/Project_Three_Business_Intelligence/blob/main/Photos/Project_Three_BI_Flow.jpg)
+
+### So lets get our Data into the AWS ethosephere ###
+
+[.](https://github.com/derekchappell/Project_Three_Business_Intelligence/blob/main/Photos/S3%20bucket.JPG)
+[.](https://github.com/derekchappell/Project_Three_Business_Intelligence/blob/main/Photos/redhsift.JPG)
+
+### Detailed Instructions for this step can be found [here](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html) ###
 
 ## Now we need to create our table in our redshift server to query ##
 
