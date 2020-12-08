@@ -10,8 +10,8 @@
 
 ### So lets get our Data into the AWS ethosephere ###
 
-[.](https://github.com/derekchappell/Project_Three_Business_Intelligence/blob/main/Photos/S3%20bucket.JPG)
-[.](https://github.com/derekchappell/Project_Three_Business_Intelligence/blob/main/Photos/redhsift.JPG)
+[.](<a href="https://imgur.com/yYH5KZ5"><img src="https://i.imgur.com/yYH5KZ5.jpg" title="source: imgur.com" /></a>)
+[.](<a href="https://imgur.com/UKxPRS2"><img src="https://i.imgur.com/UKxPRS2.jpg" title="source: imgur.com" /></a>)
 
 ### Detailed Instructions for this step can be found [here](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html) ###
 
