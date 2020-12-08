@@ -42,23 +42,42 @@ maxerror 5;
 
 [.]()
 
-## ENTER TITLE HERE ##
+## Now that we have a table setup in our redshift lets use a jupyter notebook and read from it ##
 
 ```python
-s = "Python syntax highlighting"
-print s
+dbname = 'dev'
+host = 'project-three-bi.{endpoint_data}.us-east-2.redshift.amazonaws.com'
+user = 'username'
+password = 'password'
+port = '5439'
+
+endpoint = f"postgresql://{user}:{password}@{host}:{port}/{dbname}"
+
+my_connection = create_engine(endpoint)
+query = "SELECT * FROM mytable;"
+df = pd.read_sql(query, my_connection)
+df.head()
 ```
+[.](<a href="https://imgur.com/OnszAmE"><img src="https://i.imgur.com/OnszAmE.jpg" title="source: imgur.com" /></a>)
+### looks like we are up and running ###
 
-[.]()
 
-## ENTER TITLE HERE ##
+## What if we would like to look at How many of each category we have availbale? ##
 
 ```python
-s = "Python syntax highlighting"
-print s
-```
+df['parent_category'] = df['category'].apply(lambda row: row.split('|')[0])
+df[['category', 'parent_category']].head()
 
-[.]()
+top_ten_category = pd.DataFrame(df['parent_category'].value_counts()[:10])
+cols = ['category', 'count']
+top_ten_category_df = top_ten_category.reset_index()
+top_ten_category_df.columns = cols
+top_ten_category_df
+
+```
+### The above code splits out the first position category grouping as it is the most general we can use, further cetgory names will be too specific. ###
+### This is what we get out of that ###
+[.](<a href="https://imgur.com/p7i8oX3"><img src="https://i.imgur.com/p7i8oX3.jpg" title="source: imgur.com" /></a>)
 
 ## ENTER TITLE HERE ##
 
