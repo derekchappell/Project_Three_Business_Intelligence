@@ -4,7 +4,7 @@
 
 ### Here is our basic Architecture ###
 
-[.](<blockquote class="imgur-embed-pub" lang="en" data-id="pVhZWpd"><a href="https://imgur.com/pVhZWpd">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
+[.](<a href="https://imgur.com/cdkegjn"><img src="https://i.imgur.com/cdkegjn.jpg" title="source: imgur.com" /></a>)
 
 ### So lets get our Data into the AWS ethosephere ###
 
