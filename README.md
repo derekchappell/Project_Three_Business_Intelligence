@@ -6,12 +6,12 @@
 
 
 
-[.](<a href="https://imgur.com/pVhZWpd"><img src="https://i.imgur.com/pVhZWpd.jpg" title="source: imgur.com" /></a>)
+[](<a href="https://imgur.com/pVhZWpd"><img src="https://i.imgur.com/pVhZWpd.jpg" title="source: imgur.com" /></a>)
 
 ### So lets get our Data into the AWS ethosephere ###
 
-[.](<a href="https://imgur.com/yYH5KZ5"><img src="https://i.imgur.com/yYH5KZ5.jpg" title="source: imgur.com" /></a>)
-[.](<a href="https://imgur.com/UKxPRS2"><img src="https://i.imgur.com/UKxPRS2.jpg" title="source: imgur.com" /></a>)
+[](<a href="https://imgur.com/yYH5KZ5"><img src="https://i.imgur.com/yYH5KZ5.jpg" title="source: imgur.com" /></a>)
+[](<a href="https://imgur.com/UKxPRS2"><img src="https://i.imgur.com/UKxPRS2.jpg" title="source: imgur.com" /></a>)
 
 ### Detailed Instructions for this step can be found [here](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html) ###
 
@@ -40,8 +40,6 @@ maxerror 5;
 
 ```
 
-[.]()
-
 ## Now that we have a table setup in our redshift lets use a jupyter notebook and read from it ##
 
 ```python
@@ -58,7 +56,7 @@ query = "SELECT * FROM mytable;"
 df = pd.read_sql(query, my_connection)
 df.head()
 ```
-[.](<a href="https://imgur.com/OnszAmE"><img src="https://i.imgur.com/OnszAmE.jpg" title="source: imgur.com" /></a>)
+[](<a href="https://imgur.com/OnszAmE"><img src="https://i.imgur.com/OnszAmE.jpg" title="source: imgur.com" /></a>)
 ### looks like we are up and running ###
 
 
@@ -77,49 +75,33 @@ top_ten_category_df
 ```
 ### The above code splits out the first position category grouping as it is the most general we can use, further cetgory names will be too specific. ###
 ### This is what we get out of that ###
-[.](<a href="https://imgur.com/p7i8oX3"><img src="https://i.imgur.com/p7i8oX3.jpg" title="source: imgur.com" /></a>)
+[](<a href="https://imgur.com/p7i8oX3"><img src="https://i.imgur.com/p7i8oX3.jpg" title="source: imgur.com" /></a>)
 
-## ENTER TITLE HERE ##
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-[.]()
-
-## ENTER TITLE HERE ##
+## Lets send that DataFrame to redshift and create a table we can directly query with a BI tool, or just read as table anywhere in the world we have internet access ##
 
 ```python
-s = "Python syntax highlighting"
-print s
+top_ten_category_df.to_sql('top_ten_category_table', my_connection, index=False, if_exists='replace')
 ```
+### ONE line of code to write to our redhsift server, but what does we get back out if we query our table?
+[](<a href="https://imgur.com/AKNst0L"><img src="https://i.imgur.com/AKNst0L.jpg" title="source: imgur.com" /></a>)
+### Exactly what we put in there! Only now it is as accessible as our S3 bucket 'Data Lake' Keep the upload and DataFrame simple and changes can be made in seconds. ###
 
-[.]()
+## What does this look like in a Business Intelligence tool? ##
 
-## ENTER TITLE HERE ##
+### Lets set it up first: ###
 
-```python
-s = "Python syntax highlighting"
-print s
-```
+[](<a href="https://imgur.com/cdkegjn"><img src="https://i.imgur.com/cdkegjn.jpg" title="source: imgur.com" /></a>)
+### Nothing Fancy here, simply uploading the same credentials we have been will allow us to bring in the data to an interactive (albeit simple) dashboard ###
 
-[.]()
+## After some paying around, we have a dashboard accessable anywhere in the world to a stakeholder with the right credentials. ##
 
-## ENTER TITLE HERE ##
+[](<a href="https://imgur.com/7cdDDK6"><img src="https://i.imgur.com/7cdDDK6.jpg" title="source: imgur.com" /></a>)
 
-```python
-s = "Python syntax highlighting"
-print s
-```
 
-[.]()
 
-## ENTER TITLE HERE ##
+## So there we have it, an end to end data pipeline that can be used for Data Science projects all the way to building dash's. The problem of scalability is a far simpler problem to overcome when building out on the cloud. Coupled with the ability to make ANY changes at ANY time fully remote and the benefits cannot be understated ##
 
-```python
-s = "Python syntax highlighting"
-print s
-```
+
+
 
 [.]()
