@@ -1,4 +1,4 @@
-# Project Three Business Intelligence #
+# Project Three: Business Intelligence #
 
 ## Can we create an entire data pipeline from Data procurement to Business Intelligence Tool use? And do it for free? ##
 
