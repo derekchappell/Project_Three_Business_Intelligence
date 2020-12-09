@@ -6,7 +6,7 @@
 
 
 
-[](<a href="https://imgur.com/pVhZWpd"><img src="https://i.imgur.com/pVhZWpd.jpg" title="source: imgur.com" /></a>)
+[](<a href="https://imgur.com/HCk74vV"><img src="https://i.imgur.com/HCk74vV.jpg" title="source: imgur.com" /></a>)
 
 ### So lets get our Data into the AWS ethosephere ###
 
