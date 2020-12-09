@@ -8,6 +8,9 @@
 
 [](<a href="https://imgur.com/HCk74vV"><img src="https://i.imgur.com/HCk74vV.jpg" title="source: imgur.com" /></a>)
 
+## We will be using marketing data from Amazon to do ask some questions of ##
+
+
 ### So lets get our Data into the AWS ethosephere ###
 
 [](<a href="https://imgur.com/yYH5KZ5"><img src="https://i.imgur.com/yYH5KZ5.jpg" title="source: imgur.com" /></a>)
